@@ -129,12 +129,21 @@
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           hugo 搭建个人网站 for mac 本地搭建  安装hugo
-brew install hugo 创建网站
-hugo new site myblog 给网站添加一个主题
-shell cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  添加一些内容
-hugo new posts/my-first-post.md 启动hugo server
-hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的网站了
-  部署到github上  Create a &lt;YOUR-PROJECT&gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files. Create a &lt;USERNAME&gt;.github.io GitHub repository.
+brew install hugo
+ 创建网站
+hugo new site myblog
+ 给网站添加一个主题
+cd myblog
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &gt;&gt; config.toml
+ 添加一些内容
+hugo new posts/my-first-post.md
+ 启动hugo server
+hugo server -D
+启动成功后在http://localhost:1313/就可以看到自己的网站了
+  部署到github上  Create a &lt;YOUR-PROJECT&gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files.
+ Create a &lt;USERNAME&gt;.
         </div>
           <a href="/posts/hugo/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
