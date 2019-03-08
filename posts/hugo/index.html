@@ -32,7 +32,7 @@
 <meta property="og:description" content="hugo 搭建个人网站 for mac 本地搭建  安装hugo
 brew install hugo 创建网站
 hugo new site myblog 给网站添加一个主题
- cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
+shell cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
 hugo new posts/my-first-post.md 启动hugo server
 hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的网站了
   部署到github上  Create a &lt;YOUR-PROJECT&gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files. Create a &lt;USERNAME&gt;.github.io GitHub repository." />
@@ -44,14 +44,14 @@ hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的�
 <meta itemprop="description" content="hugo 搭建个人网站 for mac 本地搭建  安装hugo
 brew install hugo 创建网站
 hugo new site myblog 给网站添加一个主题
- cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
+shell cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
 hugo new posts/my-first-post.md 启动hugo server
 hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的网站了
   部署到github上  Create a &lt;YOUR-PROJECT&gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files. Create a &lt;USERNAME&gt;.github.io GitHub repository.">
 
 
 
-<meta itemprop="wordCount" content="224">
+<meta itemprop="wordCount" content="227">
 
 
 
@@ -61,7 +61,7 @@ hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的�
 <meta name="twitter:description" content="hugo 搭建个人网站 for mac 本地搭建  安装hugo
 brew install hugo 创建网站
 hugo new site myblog 给网站添加一个主题
- cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
+shell cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  添加一些内容
 hugo new posts/my-first-post.md 启动hugo server
 hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的网站了
   部署到github上  Create a &lt;YOUR-PROJECT&gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files. Create a &lt;USERNAME&gt;.github.io GitHub repository."/>
@@ -135,7 +135,7 @@ hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的�
 <li>创建网站<br />
 <code>hugo new site myblog</code></li>
 <li>给网站添加一个主题<br />
-<code>
+<code>shell
 cd myblog    
 git init    
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke     
@@ -161,7 +161,7 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 <li>Press Ctrl+C to kill the server</li>
 <li>rm -rf public to completely remove the public directory<br /></li>
 <li>push your site to <code>&lt;YOUR-PROJECT&gt;</code> repository<br />
-<code>
+<code>shell
 git add .    
 git commit -m &quot;some msg&quot;    
 git push origin master    
@@ -169,7 +169,7 @@ git push origin master
 </ul></li>
 <li><code>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code>. This creates a git submodule. Now when you run the <code>hugo</code> command to build your site to <code>public</code>, the created <code>public</code> directory will have a different remote origin (i.e. hosted GitHub repository). You can automate some of these steps with the following script.</li>
 <li>submit the change<br />
-<code>
+<code>shell
 git add .    
 git commit -m &quot;some msg&quot;    
 git push origin master    
