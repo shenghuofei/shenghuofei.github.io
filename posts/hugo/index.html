@@ -136,10 +136,10 @@ hugo server -D 启动成功后在http://localhost:1313/就可以看到自己的�
 <code>hugo new site myblog</code></li>
 <li>给网站添加一个主题<br />
 <code>
-cd myblog  
-git init  
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke  
-echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  
+cd myblog    
+git init    
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke     
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml    
 </code></li>
 <li>添加一些内容<br />
 <code>hugo new posts/my-first-post.md</code></li>
@@ -162,17 +162,17 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 <li>rm -rf public to completely remove the public directory<br /></li>
 <li>push your site to <code>&lt;YOUR-PROJECT&gt;</code> repository<br />
 <code>
-git add .  
-git commit -m &quot;some msg&quot;  
-git push origin master  
+git add .    
+git commit -m &quot;some msg&quot;    
+git push origin master    
 </code></li>
 </ul></li>
 <li><code>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code>. This creates a git submodule. Now when you run the <code>hugo</code> command to build your site to <code>public</code>, the created <code>public</code> directory will have a different remote origin (i.e. hosted GitHub repository). You can automate some of these steps with the following script.</li>
 <li>submit the change<br />
 <code>
-git add .  
-git commit -m &quot;some msg&quot;  
-git push origin master  
+git add .    
+git commit -m &quot;some msg&quot;    
+git push origin master    
 </code>
 That’s it! Your personal page should be up and running at <code>https://&lt;USERNAME&gt;.github.io</code> within a couple minutes.</li>
 </ol>
