@@ -5,33 +5,24 @@
     <link>https://shenghuofei.github.io/posts/</link>
     <description>Recent content in Posts on My technical corner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shenghuofei.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
+      <title>hugo 搭建个人网站 for mac</title>
       <link>https://shenghuofei.github.io/posts/hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shenghuofei.github.io/posts/hugo/</guid>
       <description>hugo 搭建个人网站 for mac 本地搭建  安装hugo
-brew install hugo
- 创建网站
-hugo new site myblog
- 给网站添加一个主题
-cd myblog
-git init
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
-echo &amp;lsquo;theme = &amp;ldquo;ananke&amp;rdquo;&amp;rsquo; &amp;gt;&amp;gt; config.toml
- 添加一些内容
-hugo new posts/my-first-post.md
- 启动hugo server
+brew install hugo 创建网站
+hugo new site myblog 给网站添加一个主题  cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml  添加一些内容
+hugo new posts/my-first-post.md 启动hugo server
 hugo server -D
-启动成功后在http://localhost:1313/就可以看到自己的网站了
-  部署到github上  Create a &amp;lt;YOUR-PROJECT&amp;gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files.
- Create a &amp;lt;USERNAME&amp;gt;.</description>
+启动成功后在http://localhost:1313/就可以看到自己的网站了  部署到github上  Create a &amp;lt;YOUR-PROJECT&amp;gt; (e.g. blog) repository on GitHub. This repository will contain Hugo’s content and other source files. Create a &amp;lt;USERNAME&amp;gt;.github.io GitHub repository. This is the repository that will contain the fully rendered version of your Hugo website.</description>
     </item>
     
   </channel>
